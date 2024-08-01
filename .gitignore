@@ -1,0 +1,16 @@
+client_secrets.json
+cookies.json
+upload_video.py
+.env
+text/
+posts/
+screenshots/
+finished_videos/
+combined_audio/
+audio/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.idea/
+bg_video/
