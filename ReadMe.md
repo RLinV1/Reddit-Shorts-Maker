@@ -23,4 +23,7 @@
 
 
 # Example Video
-https://github.com/user-attachments/assets/cb21e136-62c3-4089-a633-bfcfd7f22e45
+Short 10 second video to show as a test. The actual videos will be around 50 seconds long
+https://github.com/user-attachments/assets/c7762e30-31c8-4c51-8fb1-06af352915a9
+
+
