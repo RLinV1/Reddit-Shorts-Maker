@@ -2,13 +2,15 @@
 
 1. First you have to create a reddit app (https://www.reddit.com/prefs/apps) and
    put the client_secret and client_id in an .env file.
+   
+3. Also in that env file include your reddit username and password
 
-3. Next run reddit.py to generate the posts. It currently
+4. Next run reddit.py to generate the posts. It currently
    returns the top 10 posts in AMITA.
 
-4. Then run main.py.
+5. Then run main.py.
 
-5. Then restart the steps again with another file starting with step 3.
+6. Then restart the steps again with another file starting with step 3.
 
 # Installation
 
