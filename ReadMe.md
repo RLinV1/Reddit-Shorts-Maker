@@ -1,9 +1,7 @@
 # How To Use
 
-1. First you have to create a reddit app and
-   put the client_secret and client_id in the .env
-   file.
-2. Then create an OAUTH client id (DESKTOP APP) and get the client id and client secret and write them in your client_secrets.json
+1. First you have to create a reddit app (https://www.reddit.com/prefs/apps) and
+   put the client_secret and client_id in an .env file.
 
 3. Next run reddit.py to generate the posts. It currently
    returns the top 10 posts in AMITA.
