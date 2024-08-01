@@ -15,8 +15,8 @@
 # Installation
 
 1. pip install -r requirements.txt
-2. Install ImageMagisk
+2. Install ImageMagisk 
 3. Install aeneas
-   1. I used wsl to use aeneas so you would need to use that for it to work
+   1. I used wsl to use aeneas so you would need to use that for it to work on windows
    2. If you use Mac then you might need to alter the code and if you're using windows look up how to enable wsl
-   3. Should work on linux
+   3. On linux everything should work fine. Haven't tested ImageMagisk
