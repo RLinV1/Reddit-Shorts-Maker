@@ -81,7 +81,7 @@ def process_post(file_name, gender):
     video_path = bg_video[random.randint(0, dir_len - 1)]
 
     for index in range(count):
-        print(f"Creating Video #{index + 1}")
+        print(f"Creating Video {index + 1}")
 
         audio_path = f"audio/audio_{index}.mp3"
 

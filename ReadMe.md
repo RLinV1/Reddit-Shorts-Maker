@@ -1,9 +1,9 @@
 # How To Use
 
-1. First you have to create a reddit app and
-   put the client_secret and client_id in the .env
-   file.
-2. Then create an OAUTH client id (DESKTOP APP) and get the client id and client secret and write them in your client_secrets.json
+1. First you have to create a reddit app (https://www.reddit.com/prefs/apps) and
+   put the client_secret and client_id in an .env file.
+
+2. Also in that env file include your reddit username and password
 
 3. Next run reddit.py to generate the posts. It currently
    returns the top 10 posts in AMITA.
@@ -16,7 +16,11 @@
 
 1. pip install -r requirements.txt
 2. Install ImageMagisk
-3. Install aeneas
-   1. I used wsl to use aeneas so you would need to use that for it to work
-   2. If you use Mac then you might need to alter the code and if you're using windows look up how to enable wsl
-   3. Should work on linux
+
+# Example Video
+
+Short 10 second video to show as a test. The actual videos will be around 50 seconds long
+
+https://github.com/user-attachments/assets/c7762e30-31c8-4c51-8fb1-06af352915a9
+
+
