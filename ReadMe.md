@@ -10,7 +10,6 @@
 
 4. Then run main.py.
 
-5. Then restart the steps again with another file starting with step 3.
 
 # Installation
 
