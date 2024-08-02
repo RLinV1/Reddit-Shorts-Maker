@@ -33,6 +33,28 @@ def create_text_clip(txt: str) -> CompositeVideoClip:
     return text_clip
 
 
+def create_top_subtitle(post_num: int, margin_top: int = 50) -> TextClip:
+    """
+    Create a TextClip for a top subtitle indicating the post number with a top margin.
+
+    Args:
+        post_num (int): The post number to display.
+        margin_top (int): The margin from the top of the video.
+
+    Returns:
+        TextClip: A TextClip object for the top subtitle.
+    """
+
+    subtitle_text = f"Part {post_num}"
+    top_subtitle = TextClip(subtitle_text, fontsize=80, color='white', font="Montserrat",
+                            stroke_width=2, stroke_color="black")
+
+    # Set the position with a top margin
+    top_subtitle = top_subtitle.set_position(('center', margin_top)).set_duration(2)  # Adjust duration as needed
+
+    return top_subtitle
+
+
 def generate_video(video_path: str, audio: str = None,
                    index: int = None, post_num: int = None) -> str:
     """Generate a video with background video, audio, and subtitles."""
@@ -40,7 +62,7 @@ def generate_video(video_path: str, audio: str = None,
     # Generate subtitles
     subs = SubtitlesClip(f'./subtitles/subtitle_{index}.srt', create_text_clip)
 
-    # Pick a random bg video
+    top_subtitle = create_top_subtitle(index + 1, margin_top=350)
 
     # Load background video and audio clips
     video = VideoFileClip(f"bg_video/{video_path}")
@@ -84,20 +106,20 @@ def generate_video(video_path: str, audio: str = None,
     new_audioclip = CompositeAudioClip([audioclip])
     video = video.set_audio(new_audioclip)
 
-    # add screenshot of reddit post for 3 seconds
+    # Add screenshot of Reddit post for 3 seconds
     image = ImageClip(f"screenshots/post_{post_num}.png")
 
     # Resize the image.
     image = resize(image, width=1200, height=300)
 
-    # show image for 1 second
+    # Show image for 1 second
     image = image.set_duration(1)
 
     # Set the position of the image
     image = image.set_position(("center", "center"))
 
     # Add subtitles to the video
-    result = CompositeVideoClip([video, subs.set_position('center'), image])
+    result = CompositeVideoClip([video, subs.set_position('center'), image, top_subtitle])
 
     # Create the output directory if it doesn't exist
     output_dir = f"finished_videos/post_{post_num}"

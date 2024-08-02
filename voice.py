@@ -39,6 +39,7 @@ def split_text(text, title, chunk_size=925):
 
     return chunks
 
+
 def generate_audio_and_text(voice, file_name, tts_service, post_num):
     # Example usage
     create_directories()
@@ -50,7 +51,7 @@ def generate_audio_and_text(voice, file_name, tts_service, post_num):
         text = ' '.join([l.strip() for l in f.readlines()])
 
     # Split text into chunks
-    chunks = split_text(text, title, chunk_size=930)
+    chunks = split_text(text, title, chunk_size=1000)
 
     # Generate MP3 files for each chunk and save text chunks
     mp3_files = []

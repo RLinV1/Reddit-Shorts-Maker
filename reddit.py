@@ -112,7 +112,7 @@ def get_reddit_posts():
     )
 
     # Choose the subreddit you want to get hot posts from
-    subreddit = reddit.subreddit('AITAH')
+    subreddit = reddit.subreddit('AmItheAsshole')
 
     # Get the top posts
     top_posts = subreddit.top(time_filter="day", limit=10)
@@ -125,8 +125,9 @@ def get_reddit_posts():
 
     bad_words = {
         "fuck": "frick",
-        "AITAH": "Am I the a hole",
-        "asshole": "a hole"
+        "AITAH": "Am I the ay hole",
+        "asshole": "ay hole",
+        "AITA": "Am I the ay hole"
         # Add more bad words and their replacements as needed
     }
 
