@@ -74,7 +74,7 @@ def process_post(file_name, gender):
     generate_audio_and_text(voice, file_name, tts_service, post_num)
 
     lst = os.listdir("./audio")  # your directory path
-    count = len(lst) - 1
+    count = len(lst)
 
     bg_video = os.listdir("./bg_video")
     dir_len = len(bg_video)
@@ -100,6 +100,7 @@ def process_post(file_name, gender):
         finished_video_path = generate_video(video_path, audio_path, index, post_num)
 
         # Upload video if content limit then comment this out and manually upload
+        # seems the quota limit exceeeds very quickly
         # upload_video(finished_video_path, title, description)
 
     # Test the function

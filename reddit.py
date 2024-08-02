@@ -9,6 +9,7 @@ from playwright.sync_api import sync_playwright, ViewportSize
 load_dotenv()
 
 
+# #reddit #redditstories #subwaysurfers #shorts #tiktok #minecraft
 def enable_dark_mode(page):
     # Add a custom style to enable dark mode
     page.evaluate('''
