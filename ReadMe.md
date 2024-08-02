@@ -9,6 +9,8 @@
    returns the top 10 posts in AMITA.
 
 4. Then run main.py.
+   1. You should have 10 txt files in the posts directory and you can either make videos for all of them or pick a specific file name. Also choose a gender for the tts.
+   2. The end result will be a directory finished_videos which stores clips less than 60s of reddit posts with each clip in their respective post number directory.
 
 
 # Installation
