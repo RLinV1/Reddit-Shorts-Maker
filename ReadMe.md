@@ -5,10 +5,12 @@
 
 2. Also in that env file include your reddit username and password
 
-3. Next run reddit.py to generate the posts. It currently
+3. Make sure that you have a folder called bg_video and provide it with some random bg videos (at least > 60s) 
+
+4. Next run reddit.py to generate the posts. It currently
    returns the top 10 posts in AMITA.
 
-4. Then run main.py.
+5. Then run main.py.
    1. You should have 10 txt files in the posts directory and you can either make videos for all of them or pick a specific file name. Also choose a gender for the tts.
    2. The end result will be a directory finished_videos which stores clips less than 60s of reddit posts with each clip in their respective post number directory.
 
